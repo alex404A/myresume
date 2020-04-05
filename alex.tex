@@ -1,0 +1,172 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\skillItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \textbf{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{
+  \item[-]\small{
+    \textsl{#1\vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubItemListStart}{\begin{enumerate}}
+\newcommand{\resumeSubItemListEnd}{\end{enumerate}\vspace{6pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Ximin Ma} & Email : \href{mailto:maxmalex1990@gmail.com}{maxmalex1990@gmail.com}\\
+  \textbf Mobile: +65 84249472 \\
+\end{tabular*}
+
+%-----------Introduction-----------------
+\section{Introduction}
+An experienced full stack engineer, who focuses on backend and is capable of developing from end to end.
+
+A highly motivated person, who transitioned from hardware to software after layoff in his first job.
+
+A curious programmer, who never limits himself in specific language or technology. To be a software engineer first, to be an engineer in specific domain later. 
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tsinghua University}{Beijing, China}
+      {Master of Precision Instrument}{Aug. 2012 -- June. 2015}
+    \resumeSubheading
+      {Tsinghua University}{Beijing, China}
+      {Bachelor of Precision Instrument}{Aug. 2008 -- June. 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {6Etates}{Singapore}
+      {Senior Software Engineer}{Feb 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Fullstack Team Infrastructure}
+        \resumeSubItemListStart
+          \resumeSubItem{Introduce git flow development, code style guideline and code review standard. Make team member take ownership on developing, testing, deploying and maintenance}
+          \resumeSubItem{Lead 9 team members for one year as fullstack team leader}
+          \resumeSubItem{Lint Tools, Gitlab CI, Spinnaker, Docker, Kubernetes}
+        \resumeSubItemListEnd
+        \resumeItem{Trade Finance Automize Platform}
+        \resumeSubItemListStart
+          \resumeSubItem{A solution for trade docs review process, including doc management, info extraction and standard rule check}
+          \resumeSubItem{A web app, which integrates ocr/mrc service in workflow. A rule engine, which is a mini javascript interpreter and provides a graphic configuration UI for non-developer user using Blockly}
+          \resumeSubItem{Lead 5 team members to develop from scratch for nearly a year as fullstack team leader}
+          \resumeSubItem{Dashboard(Java 11/Spring Boot 2), Frontend(Vue.js), Rule Engine(Typescript), Database(Mongodb)}
+        \resumeSubItemListEnd
+        \resumeItem{Distributed Crawler System}
+        \resumeSubItemListStart
+          \resumeSubItem{A platform to crawl public data automatically based on configured templates in both web and mobile platform}
+          \resumeSubItem{A task server, which acts as a task scheduler and distributor. A template engine, which provides a way to evaluate downloaded pages based on mannually configured xml template. Distributed clients, which focus on downloading web pages and integrate with language related SDK to fetch and submit tasks consistently. A proxy server, which proxies requests sent from mobile platform}
+          \resumeSubItem{Cooperate with 2 team members to develop from scratch for nearly 2 years on web platform, and develop mobile platform as team leader for half a year}
+          \resumeSubItem{Server(Java 8/Spring MVC/PhantomJS), Client(Python 2/Node.js/Appium/Selenium), Template Engine(Java 8), Proxy Server(Node.js), DataBase(Mysql, Mongodb, Redis, Kafka)}
+        \resumeSubItemListEnd
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {National University of Singapore}{Singapore}
+      {Assistant Engineer}{Feb 2016 - Jan 2017}
+      \resumeItemListStart
+        \resumeItem{Algorithm Integration and Data Management Platform}
+        \resumeSubItemListStart
+          \resumeSubItem{Integrate NLP algorithms in system, and provide a mechanism to call api according to predefined rules for different users. Build a web app to help researchers upload/manage/download data}
+          \resumeSubItem{owner of algorithm platform, develop frontend for data management web app}
+          \resumeSubItem{Java 7, Angular.js}
+        \resumeSubItemListEnd
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Skills-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \skillItem{Languages}
+      {Java, Javascript, Typescript, Python, Golang, Shell}
+    \skillItem{Database}
+      {Mysql, Mongodb, Redis, Kafka, Elastic Search}
+    \skillItem{Others}
+      {Git, Docker, Kubernetes, Vim}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
